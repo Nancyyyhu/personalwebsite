@@ -8,7 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +24,7 @@
 <!-- LEFT COLUMN -->
 <aside class="left-column">
 
-<h1 class="logo">Yue Hu</h1>
+<h1 class="lavishly-yours-regular">Yue Hu</h1>
 
 <nav class="project-list">
 <a href="#">Project One</a>
@@ -33,14 +35,7 @@
 <a href="#">Project Six</a>
 </nav>
 
-<div class="left-links">
-<a href="#">about</a>
-<a href="#">email</a>
-<a href="#">instagram</a>
-<a href="#">rednote</a>
-</div>
-
-<p class="copyright">© 2026 Yue Hu</p>
+<p class="copyright">© Parsons Yue Hu</p>
 
 </aside>
 
@@ -116,7 +111,26 @@ design competitions and fashion shows in both New York and Shanghai.
 
 
 <style> 
-    * {
+.mea-culpa-regular {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48pt;
+}
+.bonheur-royale-regular {
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60pt;
+}
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60pt;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -163,14 +177,6 @@ body {
   gap: 28px;
 }
 
-.logo {
-  font-family: "Italiana", serif;
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 0.9;
-  letter-spacing: 1px;
-}
-
 .project-list {
   display: flex;
   flex-direction: column;
@@ -178,8 +184,7 @@ body {
   margin-top: 6px;
 }
 
-.project-list a,
-.left-links a {
+.project-list a{
   color: #f5eee8;
   text-decoration: none;
   font-size: 1.55rem;
@@ -187,16 +192,8 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.project-list a:hover,
-.left-links a:hover {
+.project-list a:hover{
   opacity: 0.65;
-}
-
-.left-links {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-top: 12px;
 }
 
 .copyright {
