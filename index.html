@@ -1,15 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yue Hu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Hello World</h1>
-<p>This is my first website.</p>
+<div class="overlay"></div>
+
+<main class="page">
+
+<!-- LEFT COLUMN -->
+<aside class="left-column">
+
+<h1 class="logo">Yue Hu</h1>
+
+<nav class="project-list">
+<a href="#">Project One</a>
+<a href="#">Project Two</a>
+<a href="#">Project Three</a>
+<a href="#">Project Four</a>
+<a href="#">Project Five</a>
+<a href="#">Project Six</a>
+</nav>
+
+<div class="left-links">
+<a href="#">about</a>
+<a href="#">email</a>
+<a href="#">instagram</a>
+<a href="#">rednote</a>
+</div>
+
+<p class="copyright">© 2026 Yue Hu</p>
+
+</aside>
+
+
+<!-- RIGHT COLUMN -->
+<section class="right-column">
+
+<div class="bio-section">
+
+<div class="bio-block">
+<h2>About</h2>
+
+<p>
+Growing up in a family shaped by the fusion of a business-minded father
+and an artistically sensitive mother, I have always searched for a balance
+between rationality and intuition, commerce and art.
+</p>
+
+<p>
+I rarely call myself an “artist,” but rather a “designer,” because I believe
+design should carry meaning. For me, communication is never only about
+visual expression; it is about constructing connections, values,
+and systems of understanding.
+</p>
+
+</div>
+
+
+<div class="bio-block">
+<h2>Experience</h2>
+
+<p>
+I graduated from Parsons School of Design, majoring in Communication Design
+with a minor in Marketing and Management.
+</p>
+
+<p>
+I have worked with companies including Ogilvy and Dongfeng Peugeot in France,
+and interned at the art department of Orient Group in both Beijing and Shanghai,
+as well as at the design studio “Randerland.”
+</p>
+
+<p>
+I also co-founded a sustainable fashion brand “R'cizze,” through which we organized
+design competitions and fashion shows in both New York and Shanghai.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="contact-section">
+
+<h2>Contact</h2>
+
+<p>Email: your@email.com</p>
+<p>Phone: +1 XXX XXX XXXX</p>
+<p>Location: New York</p>
+<p>Instagram: @youraccount</p>
+<p>Rednote: @youraccount</p>
+
+</div>
+
+</section>
+
+</main>
 
 </body>
 </html>
+
+
+
+
+<style> 
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Cormorant Garamond", serif;
+  color: #f5eee8;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 0, 0, 0.32);
+  z-index: 0;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  padding: 28px 24px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
+}
+
+.logo {
+  font-family: "Italiana", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 1px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 6px;
+}
+
+.project-list a,
+.left-links a {
+  color: #f5eee8;
+  text-decoration: none;
+  font-size: 1.55rem;
+  line-height: 1.05;
+  transition: opacity 0.3s ease;
+}
+
+.project-list a:hover,
+.left-links a:hover {
+  opacity: 0.65;
+}
+
+.left-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 12px;
+}
+
+.copyright {
+  margin-top: auto;
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.right-column {
+  display: grid;
+  grid-template-columns: 1.2fr 0.75fr;
+  align-items: start;
+  gap: 80px;
+  padding-left: 270px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+.bio-section {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.bio-block h2,
+.contact-section h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.bio-block p,
+.contact-section p {
+  font-size: 1.45rem;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  max-width: 100%;
+}
+
+.contact-section {
+  max-width: 320px;
+  align-self: end;
+  margin-top: 340px;
+}
+
+@media (max-width: 1200px) {
+  .right-column {
+    padding-left: 120px;
+    gap: 50px;
+  }
+
+  .logo {
+    font-size: 3.2rem;
+  }
+
+  .project-list a,
+  .left-links a,
+  .bio-block p,
+  .contact-section p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .right-column {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .contact-section {
+    margin-top: 0;
+    align-self: start;
+  }
+
+  .copyright {
+    margin-top: 12px;
+  }
+}
+</style>
