@@ -11,9 +11,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lavishly+Yours&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Imperial+Script&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
+
+
+
+
 
 <body>
 
@@ -24,7 +30,7 @@
 <!-- LEFT COLUMN -->
 <aside class="left-column">
 
-<h1 class="lavishly-yours-regular">Yue Hu</h1>
+<h1>Yue Hu</h1>
 
 <nav class="project-list">
 <a href="#">Project One</a>
@@ -49,16 +55,7 @@
 <h2>About</h2>
 
 <p>
-Growing up in a family shaped by the fusion of a business-minded father
-and an artistically sensitive mother, I have always searched for a balance
-between rationality and intuition, commerce and art.
-</p>
-
-<p>
-I rarely call myself an “artist,” but rather a “designer,” because I believe
-design should carry meaning. For me, communication is never only about
-visual expression; it is about constructing connections, values,
-and systems of understanding.
+Believe in design driven by meaning and intention rather than aesthetic expression alone. I am a designer who values purpose, clarity, and outcome—approaching communication design as a way to construct ideas, connections, and systems of understanding. Work across disciplines and media, exploring how different formats, materials, and visual languages can intersect to create design that is thoughtful, contextual, and impactful.
 </p>
 
 </div>
@@ -68,19 +65,7 @@ and systems of understanding.
 <h2>Experience</h2>
 
 <p>
-I graduated from Parsons School of Design, majoring in Communication Design
-with a minor in Marketing and Management.
-</p>
-
-<p>
-I have worked with companies including Ogilvy and Dongfeng Peugeot in France,
-and interned at the art department of Orient Group in both Beijing and Shanghai,
-as well as at the design studio “Randerland.”
-</p>
-
-<p>
-I also co-founded a sustainable fashion brand “R'cizze,” through which we organized
-design competitions and fashion shows in both New York and Shanghai.
+Graduated from Parsons School of Design, majoring in Communication Design with a minor in Marketing and Management. I have worked with organizations including Ogilvy and Dongfeng Peugeot, and gained experience through internships at the art department of Orient Group in both Beijing and Shanghai, as well as at the design studio Randerland. I also co-founded the sustainable fashion brand R'cizze, through which we organized design competitions and fashion shows in both New York and Shanghai.
 </p>
 
 </div>
@@ -92,11 +77,11 @@ design competitions and fashion shows in both New York and Shanghai.
 
 <h2>Contact</h2>
 
-<p>Email: your@email.com</p>
-<p>Phone: +1 XXX XXX XXXX</p>
+<p>Email: huy291@newschool.edu</p>
+<p>Phone: +1 912-301-0012</p>
 <p>Location: New York</p>
-<p>Instagram: @youraccount</p>
-<p>Rednote: @youraccount</p>
+<p>Instagram: @nancyyyyyy1206</p>
+<p>Rednote: @Youoee_</p>
 
 </div>
 
@@ -111,23 +96,11 @@ design competitions and fashion shows in both New York and Shanghai.
 
 
 <style> 
-.mea-culpa-regular {
-  font-family: "Mea Culpa", cursive;
-  font-weight: 400;
+@font-face {
+  font-family: "Hastegi";
+  src: url("fonts/Hastegi.otf") format("opentype");
+  font-weight: normal;
   font-style: normal;
-  font-size: 48pt;
-}
-.bonheur-royale-regular {
-  font-family: "Bonheur Royale", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 60pt;
-}
-.lavishly-yours-regular {
-  font-family: "Lavishly Yours", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 60pt;
 }
 
 * {
@@ -166,7 +139,7 @@ body {
   z-index: 1;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 0.65fr 1fr;
   padding: 28px 24px;
 }
 
@@ -177,10 +150,18 @@ body {
   gap: 28px;
 }
 
+h1 {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  white-space: nowrap;
+  font-size: clamp(90px, 6vw, 220px);
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 10px;
   margin-top: 6px;
 }
 
@@ -190,6 +171,9 @@ body {
   font-size: 1.55rem;
   line-height: 1.05;
   transition: opacity 0.3s ease;
+  font-family: "Hastegi", serif;
+  font-size: clamp(20px, 1.6vw, 30px);
+  white-space: nowrap;
 }
 
 .project-list a:hover{
@@ -200,44 +184,51 @@ body {
   margin-top: auto;
   font-size: 1.2rem;
   opacity: 0.95;
+  font-family: "Hastegi", serif;
 }
 
 .right-column {
   display: grid;
-  grid-template-columns: 1.2fr 0.75fr;
+  grid-template-columns: 1.8fr 1fr;
   align-items: start;
   gap: 80px;
   padding-left: 270px;
   padding-right: 40px;
   padding-top: 40px;
+  font-family: "Hastegi", serif;
 }
 
 .bio-section {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  height: 100%;
+  gap: 30px;
 }
 
 .bio-block h2,
 .contact-section h2 {
-  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 12px;
+  font-size: clamp(20px, 1.6vw, 30px);
 }
 
 .bio-block p,
 .contact-section p {
-  font-size: 1.45rem;
   line-height: 1.15;
   margin-bottom: 14px;
   max-width: 100%;
+  font-size: clamp(10px, 1.1vw, 28px);
+}
+
+.contact-section p {
+    margin:1px 0;
 }
 
 .contact-section {
   max-width: 320px;
   align-self: end;
-  margin-top: 340px;
+  font-size: clamp(10px, 1.1vw, 28px);
 }
 
 @media (max-width: 1200px) {
