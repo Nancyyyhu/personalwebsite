@@ -17,11 +17,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-
-
-
-
-<body>
+<body class="page-visible">
 
 <div class="overlay"></div>
 
@@ -33,12 +29,12 @@
 <h1>Yue Hu</h1>
 
 <nav class="project-list">
-<a href="#">Project One</a>
-<a href="#">Project Two</a>
-<a href="#">Project Three</a>
-<a href="#">Project Four</a>
-<a href="#">Project Five</a>
-<a href="#">Project Six</a>
+  <a href="manifesto.html">Manifesto - 原创</a>
+  <a href="project-two.html">Project Two</a>
+  <a href="project-three.html">Project Three</a>
+  <a href="project-four.html">Project Four</a>
+  <a href="project-five.html">Project Five</a>
+  <a href="project-six.html">Project Six</a>
 </nav>
 
 <p class="copyright">© Parsons Yue Hu</p>
@@ -55,7 +51,7 @@
 <h2>About</h2>
 
 <p>
-Believe in design driven by meaning and intention rather than aesthetic expression alone. I am a designer who values purpose, clarity, and outcome—approaching communication design as a way to construct ideas, connections, and systems of understanding. Work across disciplines and media, exploring how different formats, materials, and visual languages can intersect to create design that is thoughtful, contextual, and impactful.
+Believe in design driven by meaning and intention rather than aesthetic expression alone. I am a designer who values purpose, clarity, and outcome—approaching communication design as a way to construct ideas, connections, and systems of expressing. Working across disciplines and media, I love to explore how different formats, materials, and visual languages can intersect to create designs that is contextual, impactful and sustainable.
 </p>
 
 </div>
@@ -65,7 +61,7 @@ Believe in design driven by meaning and intention rather than aesthetic expressi
 <h2>Experience</h2>
 
 <p>
-Graduated from Parsons School of Design, majoring in Communication Design with a minor in Marketing and Management. I have worked with organizations including Ogilvy and Dongfeng Peugeot, and gained experience through internships at the art department of Orient Group in both Beijing and Shanghai, as well as at the design studio Randerland. I also co-founded the sustainable fashion brand R'cizze, through which we organized design competitions and fashion shows in both New York and Shanghai.
+Graduated from Parsons School of Design with a major in Communication Design and a minor in Marketing and Management. I Worked with globally recognized organizations including Ogilvy and Dongfeng Peugeot, and gained experience through internships at the art department of Emeraldscape Cultural Company in Beijing and the design studio Randerland in Shanghai.Also, I co-founded the sustainable fashion brand R'cizze and established an online platform through which my team organized design competitions and fashion shows in both New York and Shanghai.
 </p>
 
 </div>
@@ -118,13 +114,18 @@ body {
 body {
   position: relative;
   min-height: 100vh;
-  font-family: "Cormorant Garamond", serif;
   color: #f5eee8;
   background-image: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+body.page-visible {
+  opacity: 1;
 }
 
 .overlay {
@@ -139,7 +140,7 @@ body {
   z-index: 1;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 0.65fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   padding: 28px 24px;
 }
 
@@ -158,11 +159,12 @@ h1 {
   font-size: clamp(90px, 6vw, 220px);
 }
 
+
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 6px;
+  margin-top: 30px;
 }
 
 .project-list a{
@@ -170,7 +172,7 @@ h1 {
   text-decoration: none;
   font-size: 1.55rem;
   line-height: 1.05;
-  transition: opacity 0.3s ease;
+  transition: color 0.8s ease, opacity 0.8s ease;
   font-family: "Hastegi", serif;
   font-size: clamp(20px, 1.6vw, 30px);
   white-space: nowrap;
@@ -178,6 +180,7 @@ h1 {
 
 .project-list a:hover{
   opacity: 0.65;
+  color: #000000;
 }
 
 .copyright {
@@ -189,7 +192,7 @@ h1 {
 
 .right-column {
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   align-items: start;
   gap: 80px;
   padding-left: 270px;
@@ -271,3 +274,31 @@ h1 {
   }
 }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  document.body.classList.add("page-visible");
+});
+
+document.querySelectorAll("a").forEach(function(link) {
+  link.addEventListener("click", function(e) {
+    const href = this.getAttribute("href");
+
+    if (
+      href &&
+      !href.startsWith("#") &&
+      !href.startsWith("mailto:") &&
+      !href.startsWith("tel:") &&
+      !this.hasAttribute("target")
+    ) {
+      e.preventDefault();
+
+      document.body.classList.remove("page-visible");
+
+      setTimeout(function () {
+        window.location = href;
+      }, 300);
+    }
+  });
+});
+</script>
