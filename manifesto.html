@@ -25,11 +25,11 @@
 
       <nav class="project-list">
         <a href="manifesto.html" class="active">Manifesto - 原创</a>
-        <a href="project-two.html">Project Two</a>
-        <a href="project-three.html">Project Three</a>
-        <a href="project-four.html">Project Four</a>
-        <a href="project-five.html">Project Five</a>
-        <a href="project-six.html">Project Six</a>
+        <a href="skymap.html" class="project2">Skymap - The Universe on the Go Board</a>
+        <a href="home.html" class="project3">Book Design - Home</a>
+        <a href="bikesharing.html" class="project4">Social Compaign - Hello Travel Bike-sharing </a>
+        <a href="project-five.html" class="project5">Project Five</a>
+        <a href="project-six.html" class="project6">Project Six</a>
       </nav>
 
       <p class="copyright">© Parsons Yue Hu</p>
@@ -38,30 +38,26 @@
     <!-- RIGHT -->
     <section class="right-column">
 
+      <h2 class="project-title">Skymap - The Universe on the Go Board</h2>
       <div class="project-header">
         <div class="project-intro">
-          <h2 class="project-title">Manifesto</h2>
           <p>
-            This project explores a purpose-driven approach to communication design,
-            positioning visual language as a system for constructing meaning rather
-            than decoration alone. Through interdisciplinary methods and multi-media
-            experimentation, the work investigates how intention, context, and form
-            can intersect to shape a clear and impactful narrative.
+            This project presents a manifesto addressing the current condition of the contemporary art and design landscape in China. Inspired by Eric Cai Shiwei’s call for innovation, it reflects on the historical context that shaped China’s creative culture and encourages designers to reconsider their role within a rapidly transforming society.
+
+            During the 1980s and 1990s, a period marked by economic transition and cultural uncertainty, much of China’s visual culture relied heavily on imitation and external references. Today, as the country has moved beyond that era, contemporary designers are confronted with a new responsibility: to move away from dependency and to pursue originality.
           </p>
         </div>
 
         <div class="project-concept">
           <p>
-            Moving between image, text, material, and digital presentation, the
-            project reflects my broader design practice: one that values outcome,
-            structure, and relevance. It considers how design can operate across
-            different formats while remaining conceptually grounded and visually
-            coherent.
+            Through this manifesto, the project advocates for a generation of designers who respond to their own cultural and social context—resisting repetition, embracing independent thinking, and redefining what originality can mean in contemporary China.
           </p>
         </div>
       </div>
 
       <div class="project-gallery">
+
+        <div class="project-gallery">
 
         <div class="gallery-item">
           <img src="images/manifesto1.jpg" alt="Manifesto detail image 1">
@@ -71,34 +67,42 @@
         <div class="gallery-two">
           <div class="gallery-item">
             <img src="images/manifesto2.jpg" alt="Manifesto detail image 2">
-            <p class="footnote">Material and texture study.</p>
+            <p class="footnote">Front and back side visualization shown in mockup.</p>
           </div>
           <div class="gallery-item">
             <img src="images/manifesto3.jpg" alt="Manifesto detail image 3">
-            <p class="footnote">Layout development and visual sequence.</p>
           </div>
         </div>
 
         <div class="gallery-item">
           <img src="images/manifesto4.jpg" alt="Manifesto detail image 4">
-          <p class="footnote">Expanded project presentation view.</p>
-        </div>
-
-        <div class="gallery-item">
-          <img src="images/manifesto5.jpg" alt="Manifesto detail image 5">
-          <p class="footnote">Expanded project presentation view.</p>
         </div>
 
         <div class="gallery-four">
           <div class="gallery-item">
-            <img src="images/manifesto6.jpg" alt="Manifesto detail image 6">
-            <p class="footnote">Material and texture study.</p>
+            <img src="images/manifesto5.jpg" alt="Manifesto detail image 5">
+            <p class="footnote">Expanded project presentation in different color format.</p>
           </div>
           <div class="gallery-item">
-            <img src="images/manifesto7.jpg" alt="Manifesto detail image 7">
-            <p class="footnote">Layout development and visual sequence.</p>
+            <img src="images/manifesto6.jpg" alt="Manifesto detail image 6">
           </div>
         </div>
+
+        <div class="gallery-five">
+          <div class="gallery-item">
+            <img src="images/manifesto7.jpg" alt="Manifesto detail image 5">
+            <p class="footnote">Expanded project presentation across different applications.</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/manifesto8.jpg" alt="Manifesto detail image 6">
+          </div>
+        </div>
+
+        <div class="gallery-item small-image">
+          <img src="images/manifesto9.jpg" alt="Manifesto detail image 7" >
+          <p class="footnote">Expanded project presentation view in different format.</p>
+        </div>
+
 
       </div>
     </section>
@@ -199,7 +203,7 @@
 
      .site-name a:hover{
       opacity: 0.65;
-      color: #000000;
+      color: #C9A227;
     }
 
     .project-list {
@@ -222,12 +226,26 @@
 
     .project-list a:hover{
       opacity: 0.65;
-      color: #000000;
     }
-
 
     .project-list a.active {
     text-decoration: underline;
+    }
+
+    .active:hover {
+      color: #d6a07b;
+    }
+    
+    .project2:hover{
+      color: #cfc6bf;
+    }
+
+    .project3:hover{
+      color: #c76a55;
+    }
+
+    .project4:hover{
+      color: #7fa2e8;
     }
 
     .copyright {
@@ -247,8 +265,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 36px;
-      margin-bottom: 34px;
-      align-items: start;
+      margin-bottom: 2rem;
     }
 
     .project-title {
@@ -259,14 +276,14 @@
 
     .project-intro p,
     .project-concept p {
-      font-size: clamp(12px, 1vw, 16px);
+      font-size: clamp(10px, 1.1vw, 28px);
       line-height: 1.3;
     }
 
     .project-gallery {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 35px;
     }
 
     .gallery-item {
@@ -291,8 +308,24 @@
       gap: 18px;
     }
 
+    .gallery-five {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .small-image{
+      text-align:center;
+    }
+
+    .small-image img{
+      width:60%;
+      margin:0 auto;
+      display:block;
+    }
+
     .footnote {
-      font-size: clamp(11px, 0.9vw, 14px);
+      font-size: clamp(10px, 1.1vw, 28px);
       line-height: 1.25;
       opacity: 0.95;
       margin-top: 8px;

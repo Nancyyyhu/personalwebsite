@@ -29,12 +29,12 @@
 <h1>Yue Hu</h1>
 
 <nav class="project-list">
-  <a href="manifesto.html">Manifesto - 原创</a>
-  <a href="project-two.html">Project Two</a>
-  <a href="project-three.html">Project Three</a>
-  <a href="project-four.html">Project Four</a>
-  <a href="project-five.html">Project Five</a>
-  <a href="project-six.html">Project Six</a>
+  <a href="manifesto.html" class="project1">Manifesto - 原创</a>
+  <a href="skymap.html" class="project2">Skymap - The Universe on the Go Board</a>
+  <a href="home.html" class="project3">Book Design - Home</a>
+  <a href="bikesharing.html" class="project4">Social Compaign - Hello Travel Bike-sharing </a>
+  <a href="project-five.html" class="project5">Project Five</a>
+  <a href="project-six.html" class="project6">Project Six</a>
 </nav>
 
 <p class="copyright">© Parsons Yue Hu</p>
@@ -180,8 +180,24 @@ h1 {
 
 .project-list a:hover{
   opacity: 0.65;
-  color: #000000;
 }
+
+.project1:hover{
+  opacity: 0.65;
+  color: #d6a07b;
+}
+    
+.project2:hover{
+    color: #cfc6bf;
+}
+
+.project3:hover{
+    color: #c76a55;
+}
+
+.project4:hover{
+      color: #7fa2e8;
+    }
 
 .copyright {
   margin-top: auto;
@@ -242,14 +258,6 @@ h1 {
   .logo {
     font-size: 3.2rem;
   }
-
-  .project-list a,
-  .left-links a,
-  .bio-block p,
-  .contact-section p {
-    font-size: 1.2rem;
-  }
-}
 
 @media (max-width: 900px) {
   .page {

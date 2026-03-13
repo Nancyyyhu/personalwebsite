@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skymap — Yue Hu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-visible">
+
+  <div class="overlay"></div>
+
+  <main class="page">
+
+    <!-- LEFT -->
+    <aside class="left-column">
+      <h1 class="site-name">
+        <a href="index.html">Yue Hu</a>
+      </h1>
+
+      <nav class="project-list">
+        <a href="manifesto.html" class="project1">Manifesto - 原创</a>
+        <a href="skymap.html" class="active">Skymap - The Universe on the Go Board</a>
+        <a href="home.html" class="project3">Book Design - Home</a>
+        <a href="bikesharing.html" class="project4">Social Compaign - Hello Travel Bike-sharing </a>
+        <a href="project-five.html" class="project5">Project Five</a>
+        <a href="project-six.html" class="project6">Project Six</a>
+      </nav>
+
+      <p class="copyright">© Parsons Yue Hu</p>
+    </aside>
+
+    <!-- RIGHT -->
+    <section class="right-column">
+
+      <h2 class="project-title">Skymap - The Universe on the Go Board</h2>
+      <div class="project-header">
+        <div class="project-intro">
+          <p>
+            This project is inspired by the philosophical and cosmological ideas embedded in the traditional Chinese game of Go (Weiqi). In ancient Chinese thought, the Go board was often interpreted as a symbolic map of the universe: the four corners represent the boundaries of heaven and earth, while the black and white stones embody the balance of yin and yang. The central point of the board, known as Tianyuan, corresponds to the position of the North Star in ancient astronomy, surrounded by eight other “stars,” reflecting the structure of the celestial system and the concept of the Nine Heavens and Nine Palaces in traditional Chinese cosmology.
+          </p>
+        </div>
+
+        <div class="project-concept">
+          <p>
+            Building on this conceptual framework, the project translates the spatial logic of the Go board into a contemporary visual system. The interaction between black and white stones—repulsion between similar forces and attraction between opposites—serves as a metaphor for the movement and balance of energy within the universe. Through visual mapping and graphic reinterpretation, the work explores how ancient cosmological structures can inform modern design language, transforming the Go board into a contemporary “cosmic map” that connects traditional philosophy with visual communication.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-gallery">
+
+        <div class="gallery-item">
+          <img src="images/skymap1.jpg" alt="Manifesto detail image 1">
+          <p class="footnote">Main visual of the Skymap project.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/skymap2.jpg" alt="Manifesto detail image 2">
+          <p class="footnote">Expanded project presentation view in different application context.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/skymap3.jpg" alt="Manifesto detail image 3" >
+          <p class="footnote">Expanded project presentation view in different format.</p>
+        </div>
+
+      <div class="reference-slider">
+      <button class="slider-btn prev" aria-label="Previous reference">&#10094;</button>
+
+      <div class="slider-window">
+        <div class="slide active">
+          <img src="images/reference1.jpg" alt="Skymap reference 1">
+          <p class="footnote">
+            Reference 01 — The Cosmic Go Board: It represents a symbolic map of the universe, where star points such as Tianyuan mark the cosmic center in traditional Chinese cosmology.
+          </p>
+        </div>
+
+        <div class="slide">
+          <img src="images/reference2.jpg" alt="Skymap reference 2">
+          <p class="footnote">
+            Reference 02 — Yin & Yang and the Eight Trigrams: The interaction of black and white stones reflects the balance of Yin and Yang, echoing the cosmological system of the Eight Trigrams.
+          </p>
+        </div>
+
+        <div class="slide">
+          <img src="images/reference3.jpg" alt="Skymap reference 3">
+          <p class="footnote">
+            Reference 03 — The Cosmic Matrix of Nine Palaces: The spatial structure of the Go board can be understood through the Nine Palaces, a traditional system that maps cosmic directions and order.
+          </p>
+        </div>
+      </div>
+      <button class="slider-btn next" aria-label="Next reference">&#10095;</button>
+
+      <div class="slider-counter">
+        <span class="current-slide">1</span> / <span class="total-slides">3</span>
+      </div>
+    </div>
+    </div>
+    </section>
+  </main>
+</body>
+</html>
+
+  <style>
+    @font-face {
+      font-family: "Hastegi";
+      src: url("fonts/Hastegi.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      color: #f5eee8;
+      background-image: url("images/manifesto-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      font-family: "Hastegi", serif;
+  background:
+radial-gradient(
+circle at 70% 40%,
+rgba(110,60,35,0.4),
+rgba(20,10,6,0.85)
+);
+    }
+
+    body.page-visible {
+      opacity: 1;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 0, 0, 0.32);
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      padding: 28px 24px;
+      gap: 20px;
+    }
+
+    /* LEFT */
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 28px;
+      position: sticky;
+      top: 28px;
+      align-self: start;
+      height: calc(100vh - 56px);
+    }
+
+    .site-name {
+      font-family: "Imperial Script", cursive;
+      font-weight: 400;
+      font-style: normal;
+      white-space: nowrap;
+      font-size: clamp(90px, 6vw, 220px);
+
+    }
+
+    .site-name a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.8s ease, opacity 0.8s ease;
+    }
+
+     .site-name a:hover{
+      opacity: 0.65;
+      color: #C9A227;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .project-list a{
+      color: #f5eee8;
+      text-decoration: none;
+      font-size: 1.55rem;
+      line-height: 1.05;
+      transition: color 0.8s ease, opacity 0.8s ease;
+      font-family: "Hastegi", serif;
+      font-size: clamp(20px, 1.6vw, 30px);
+      white-space: nowrap;
+    }
+
+    .project-list a:hover{
+      opacity: 0.65;
+    }
+
+    .project-list a.active {
+    text-decoration: underline;
+    }
+
+    .project1:hover {
+      color: #d6a07b;
+    }
+
+    .active:hover{
+      color: #cfc6bf;
+    }
+
+    .project3:hover{
+      color: #c76a55;
+    }
+
+    .project4:hover{
+      color: #7fa2e8;
+    }
+
+    .copyright {
+      margin-top: auto;
+      font-size: clamp(12px, 1vw, 16px);
+      opacity: 0.95;
+      font-family: "Hastegi", serif;
+    }
+
+    /* RIGHT */
+    .right-column {
+      padding-top: 40px;
+      padding-right: 24px;
+    }
+
+    .project-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      margin-bottom: 2rem;
+    }
+
+    .project-title {
+      font-size: clamp(22px, 1.8vw, 34px);
+      margin-bottom: 14px;
+      font-weight: normal;
+    }
+
+    .project-intro p,
+    .project-concept p {
+      font-size: clamp(10px, 1.1vw, 28px);
+      line-height: 1.3;
+    }
+
+    .project-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+    .gallery-item {
+      width: 100%;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .footnote {
+      font-size: clamp(10px, 1.1vw, 28px);
+      line-height: 1.25;
+      opacity: 0.95;
+      margin-top: 8px;
+    }
+
+    .reference-slider {
+  position: relative;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.slider-window {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  animation: fadeSlide 0.45s ease;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border: none;
+  cursor: pointer;
+  background: #cfc6bf;
+  color: rgba(61, 36, 24, 0.75);
+  font-size: 22px;
+  line-height: 1;
+  transition: background 0.35s ease, color 0.35s ease, opacity 0.35s ease;
+}
+
+.slider-btn:hover {
+  background: rgba(61, 36, 24, 0.75);
+  color: #ffffff;
+}
+
+.slider-btn.prev {
+  left: 12px;
+}
+
+.slider-btn.next {
+  right: 12px;
+}
+
+.slider-counter {
+  margin-top: 8px;
+  text-align: right;
+  font-size: clamp(10px, 1vw, 14px);
+  opacity: 0.9;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .slider-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .slider-btn.prev {
+    left: 8px;
+  }
+
+  .slider-btn.next {
+    right: 8px;
+  }
+}
+
+    @media (max-width: 1100px) {
+      .page {
+        grid-template-columns: 1fr;
+      }
+
+      .left-column {
+        position: relative;
+        top: 0;
+        height: auto;
+      }
+
+      .right-column {
+        padding-top: 0;
+        padding-right: 0;
+      }
+
+      .project-header {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .gallery-two {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.body.classList.add("page-visible");
+
+    const slider = document.querySelector(".reference-slider");
+
+    if (slider) {
+      const slides = slider.querySelectorAll(".slide");
+      const prevBtn = slider.querySelector(".prev");
+      const nextBtn = slider.querySelector(".next");
+      const currentSlideText = slider.querySelector(".current-slide");
+      const totalSlidesText = slider.querySelector(".total-slides");
+
+      let currentIndex = 0;
+      totalSlidesText.textContent = slides.length;
+
+      function showSlide(index) {
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+        currentSlideText.textContent = index + 1;
+      }
+
+      prevBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      });
+
+      nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      });
+
+      showSlide(currentIndex);
+    }
+
+    document.querySelectorAll("a").forEach(function(link) {
+      link.addEventListener("click", function(e) {
+        const href = this.getAttribute("href");
+
+        if (
+          href &&
+          !href.startsWith("#") &&
+          !href.startsWith("mailto:") &&
+          !href.startsWith("tel:") &&
+          !this.hasAttribute("target")
+        ) {
+          e.preventDefault();
+
+          document.body.classList.remove("page-visible");
+
+          setTimeout(function () {
+            window.location = href;
+          }, 300);
+        }
+      });
+    });
+  });
+</script>
