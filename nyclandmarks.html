@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manifesto — Yue Hu</title>
+  <title>Collection — Yue Hu</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,87 +24,69 @@
       </h1>
 
       <nav class="project-list">
-        <a href="manifesto.html" class="active">Manifesto - 原创</a>
+        <a href="manifesto.html" class="project1">Manifesto - 原创</a>
         <a href="skymap.html" class="project2">Skymap - The Universe on the Go Board</a>
         <a href="home.html" class="project3">Book Design - Home</a>
         <a href="bikesharing.html" class="project4">Social Compaign - Hello Travel Bike-sharing </a>
-        <a href="collection.html" class="project5">Book Design - 50 Ways In</a>
+        <a href="collection.html" class="active">Book Design - 50 Ways In</a>
         <a href="project-six.html" class="project6">Project Six</a>
       </nav>
 
-      <p class="copyright">© Parsons Yue Hu Fall 2023</p>
+      <p class="copyright">© Parsons Yue Hu Spring 2025</p>
     </aside>
 
     <!-- RIGHT -->
     <section class="right-column">
 
-      <h2 class="project-title">Skymap - The Universe on the Go Board</h2>
+      <h2 class="project-title">Book Design - 50 Ways In</h2>
       <div class="project-header">
         <div class="project-intro">
           <p>
-            This project presents a manifesto addressing the current condition of the contemporary art and design landscape in China. Inspired by Eric Cai Shiwei’s call for innovation, it reflects on the historical context that shaped China’s creative culture and encourages designers to reconsider their role within a rapidly transforming society.
+            This project collects fifty tickets from across the city—luxury stores, museums, restaurants, and entertainment venues—as small admissions into different moments of urban life. Each ticket becomes a fragment of experience, a record of entry into a slightly different version of the city.
 
-            During the 1980s and 1990s, a period marked by economic transition and cultural uncertainty, much of China’s visual culture relied heavily on imitation and external references. Today, as the country has moved beyond that era, contemporary designers are confronted with a new responsibility: to move away from dependency and to pursue originality.
           </p>
         </div>
 
         <div class="project-concept">
           <p>
-            Through this manifesto, the project advocates for a generation of designers who respond to their own cultural and social context—resisting repetition, embracing independent thinking, and redefining what originality can mean in contemporary China.
+            Together, they form a personal archive of New York: not a clear map of the city, but a constellation of memories, impressions, and fleeting admissions.
           </p>
         </div>
       </div>
 
       <div class="project-gallery">
 
-        <div class="project-gallery">
-
         <div class="gallery-item">
-          <img src="images/manifesto1.jpg" alt="Manifesto detail image 1">
-          <p class="footnote">Main visual of the Manifesto project.</p>
-        </div>
-
-        <div class="gallery-two">
-          <div class="gallery-item">
-            <img src="images/manifesto2.jpg" alt="Manifesto detail image 2">
-            <p class="footnote">Front and back side visualization shown in mockup.</p>
-          </div>
-          <div class="gallery-item">
-            <img src="images/manifesto3.jpg" alt="Manifesto detail image 3">
-          </div>
+          <img src="images/collection1.jpg" alt="Manifesto detail image 1">
+          <p class="footnote">Mockup layout of the Book Design.</p>
         </div>
 
         <div class="gallery-item">
-          <img src="images/manifesto4.jpg" alt="Manifesto detail image 4">
+            <img src="images/collection2.jpg" alt="Manifesto detail image 2">
         </div>
 
-        <div class="gallery-four">
-          <div class="gallery-item">
-            <img src="images/manifesto5.jpg" alt="Manifesto detail image 5">
-            <p class="footnote">Expanded project presentation in different color format.</p>
-          </div>
-          <div class="gallery-item">
-            <img src="images/manifesto6.jpg" alt="Manifesto detail image 6">
-          </div>
+        <div class="gallery-item">
+            <img src="images/collection3.jpg" alt="Manifesto detail image 3">
         </div>
 
-        <div class="gallery-five">
-          <div class="gallery-item">
-            <img src="images/manifesto7.jpg" alt="Manifesto detail image 5">
-            <p class="footnote">Expanded project presentation across different applications.</p>
-          </div>
-          <div class="gallery-item">
-            <img src="images/manifesto8.jpg" alt="Manifesto detail image 6">
-          </div>
+        <div class="gallery-item">
+            <img src="images/collection4.jpg" alt="Manifesto detail image 4">
         </div>
 
-        <div class="gallery-item small-image">
-          <img src="images/manifesto9.jpg" alt="Manifesto detail image 7" >
-          <p class="footnote">Expanded project presentation view in different format.</p>
+        <div class="gallery-item">
+            <img src="images/collection5.jpg" alt="Manifesto detail image 5">
         </div>
 
+        <div class="gallery-video">
+            <div class="video-row">
+                <video autoplay muted loop playsinline><source src="images/collectionvideo1.mp4" type="video/mp4"></video>
+                <video autoplay muted loop playsinline><source src="images/collectionvideo2.mp4" type="video/mp4"></video>
+            </div>
+            <p class="footnote">Motion graphic extensions of my "Ticket Collection" project.</p>
+        </div>
 
       </div>
+
     </section>
   </main>
 </body>
@@ -147,9 +129,9 @@
       font-family: "Hastegi", serif;
       background: linear-gradient(
 120deg,
-#3d2418,
-#8a5436,
-#5a3323
+#b7c8db,
+#5c7fb3,
+#2b3e63
 );
     }
 
@@ -232,7 +214,7 @@
     text-decoration: underline;
     }
 
-    .active:hover {
+    .project1:hover {
       color: #d6a07b;
     }
     
@@ -248,7 +230,7 @@
       color: #8fb3ff;
     }
 
-    .project5:hover{
+     .active:hover{
       color: #b7c8db;
     }
 
@@ -300,40 +282,27 @@
       display: block;
     }
 
-    .gallery-two {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+    .gallery-video {
+      width: 100%;
     }
 
-    .gallery-four {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
+.video-row {
+  display: flex;
+  gap: 20px;
+}
 
-    .gallery-five {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
+.video-row video {
+  width: 50%;
+  height: auto;
+  display: block;
+}
 
-    .small-image{
-      text-align:center;
-    }
-
-    .small-image img{
-      width:60%;
-      margin:0 auto;
-      display:block;
-    }
-
-    .footnote {
-      font-size: clamp(10px, 1.1vw, 28px);
-      line-height: 1.25;
-      opacity: 0.95;
-      margin-top: 8px;
-    }
+.footnote {
+  font-size: clamp(10px, 1.1vw, 28px);
+  line-height: 1.25;
+  opacity: 0.95;
+  margin-top: 8px;
+}
 
     @media (max-width: 1100px) {
       .page {
