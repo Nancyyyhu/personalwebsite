@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Collection — Yue Hu</title>
+  <title>Paper Skyline — Yue Hu</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,29 +28,34 @@
         <a href="skymap.html" class="project2">Skymap - The Universe on the Go Board</a>
         <a href="home.html" class="project3">Book Design - Home</a>
         <a href="bikesharing.html" class="project4">Social Compaign - Hello Travel Bike-sharing </a>
-        <a href="collection.html" class="active">Book Design - 50 Ways In</a>
+        <a href="collection.html" class="project5">Book Design - 50 Ways In</a>
         <a href="paperskyline.html" class="project6">Identity Design - Paper Skyline</a>
-        <a href="woundkiss.html" class="project7">Brochure Design - Wound Kiss</a>
+        <a href="woundkiss.html" class="active">Brochure Design - Wound Kiss</a>
       </nav>
 
-      <p class="copyright">© Parsons Yue Hu Spring 2025</p>
+      <p class="copyright">© Parsons Yue Hu Fall 2025</p>
     </aside>
 
     <!-- RIGHT -->
     <section class="right-column">
 
-      <h2 class="project-title">Book Design - 50 Ways In</h2>
+      <h2 class="project-title">Brochure Design - Wound Kiss</h2>
       <div class="project-header">
         <div class="project-intro">
           <p>
-            This project collects fifty tickets from across the city—luxury stores, museums, restaurants, and entertainment venues—as small admissions into different moments of urban life. Each ticket becomes a fragment of experience, a record of entry into a slightly different version of the city.
+            This project responds to a brief that asked for the creation of a four-page brochure — including a front cover, back cover, and two interior pages — derived from a given object.
 
+            The assigned object was a bandage.
+
+            Rather than approaching it as a purely functional item, I understood it as a symbol — one tied to childhood, care, and the experience of being hurt. Growing up, moments of “wound,” whether physical or emotional, were often met by my mother’s composed and measured voice. She offered comfort, but also distance — framing pain as something to be understood, not avoided.
+
+            What I once perceived as detachment gradually unfolded into a deeper form of care.
           </p>
         </div>
 
         <div class="project-concept">
           <p>
-            Together, they form a personal archive of New York: not a clear map of the city, but a constellation of memories, impressions, and fleeting admissions.
+            The project reflects this shift, exploring the space between injury and understanding, and the evolving meaning of healing across time.
           </p>
         </div>
       </div>
@@ -58,34 +63,19 @@
       <div class="project-gallery">
 
         <div class="gallery-item">
-          <img src="images/collection1.jpg" alt="Manifesto detail image 1">
-          <p class="footnote">Mockup layout of the Book Design.</p>
+          <div class="media-wrap">
+             <img src="images/woundkiss1.jpg" alt="Manifesto detail image 1">
+          </div>
+              <p class="footnote">Brochure — front & back covers.</p>
         </div>
 
         <div class="gallery-item">
-            <img src="images/collection2.jpg" alt="Manifesto detail image 2">
+          <div class="media-wrap">
+             <img src="images/woundkiss2.jpg" alt="Manifesto detail image 1">
+          </div>
+              <p class="footnote">Interior pages of the brochure.</p>
         </div>
-
-        <div class="gallery-item">
-            <img src="images/collection3.jpg" alt="Manifesto detail image 3">
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/collection4.jpg" alt="Manifesto detail image 4">
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/collection5.jpg" alt="Manifesto detail image 5">
-        </div>
-
-        <div class="gallery-video">
-            <div class="video-row">
-                <video autoplay muted loop playsinline><source src="images/collectionvideo1.mp4" type="video/mp4"></video>
-                <video autoplay muted loop playsinline><source src="images/collectionvideo2.mp4" type="video/mp4"></video>
-            </div>
-            <p class="footnote">Motion graphic extensions of my "Ticket Collection" project.</p>
-        </div>
-
+      
       </div>
 
     </section>
@@ -130,9 +120,10 @@
       font-family: "Hastegi", serif;
       background: linear-gradient(
 120deg,
-#b7c8db,
-#5c7fb3,
-#2b3e63
+#a9cceb,
+#cfe2f3,
+#eaf3fb,
+#f8fcff
 );
     }
 
@@ -231,7 +222,7 @@
       color: #8fb3ff;
     }
 
-     .active:hover{
+     .project5:hover{
       color: #b7c8db;
     }
 
@@ -239,7 +230,7 @@
       color: #d9c095;
     }
 
-    .project7:hover{
+    .active:hover{
       color: #f8fcff;
     }
 
@@ -285,33 +276,42 @@
       width: 100%;
     }
 
-    .gallery-item img {
+    .media-wrap {
+      width: 100%;        
+      margin-left: auto; 
+    }
+
+    .media-wrap img {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    .gallery-video {
+    .footnote {
       width: 100%;
+      margin-left: auto;
+      margin-top: 8px;
+      text-align: left;
+      font-size: clamp(10px, 1.1vw, 28px);
+      line-height: 1.25;
+      opacity: 0.95;
     }
 
-.video-row {
-  display: flex;
-  gap: 20px;
-}
+    .interaction {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: clamp(15px, 1.3vw, 35px);
+      text-align: center;
+    }
 
-.video-row video {
-  width: 50%;
-  height: auto;
-  display: block;
-}
+    .interaction a{
+      color: #4A2C12;
+    }
 
-.footnote {
-  font-size: clamp(10px, 1.1vw, 28px);
-  line-height: 1.25;
-  opacity: 0.95;
-  margin-top: 8px;
-}
+    .interaction a:hover{
+      font-size: clamp(18px, 1.5vw, 40px);
+      transition: font-size 0.8s ease;
+    }
 
     @media (max-width: 1100px) {
       .page {
