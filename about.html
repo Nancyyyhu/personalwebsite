@@ -36,6 +36,34 @@
   </nav>
 </header>
 
+<div class="about-blur"></div>
+
+<section class="about-intro">
+  <div class="about-card">
+    <div class="about-card">
+
+    <p>
+    I’m Yue Hu, a communication designer interested in how meaning takes shape—through images, materials, and systems.
+    </p>
+
+    <p>
+    Drawn to multi-disciplinary approaches, I work across mediums to explore how ideas shift, translate, and connect.
+    Also, I see design as a way of thinking — a way to construct ideas, relationships, and ways of understanding.
+    </p>
+
+    <p class="about-contact">
+      Email: <a href="mailto:huy291@newschool.edu">huy291@newschool.edu</a><br>
+      Based in New York & Wuhan, China
+    </p>
+
+    <div class="back-home">
+  <a href="index.html" class="back-button">Back to Home</a>
+</div>
+
+     </div>
+  </div>
+</section>
+
 <main class="page">
 
 <!-- LEFT COLUMN -->
@@ -165,6 +193,90 @@ header {
 /* hover 效果（高级一点） */
 .icon:hover svg {
   opacity: 0.5;
+}
+
+.about-blur {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(20, 0, 0, 0.18);
+}
+
+.about-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.about-card {
+  max-width: 680px;
+  padding: 40px 48px;
+  text-align: center;
+  color: #f5eee8;
+  font-family: "Hastegi", serif;
+  pointer-events: auto;
+}
+
+.about-card p {
+  font-size: clamp(18px, 1.4vw, 28px);
+  line-height: 1.35;
+}
+
+.about-contact {
+  margin-top: 28px;
+  font-size: clamp(18px, 1.4vw, 28px);
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.about-contact a {
+  color: #f5eee8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 238, 232, 0.5);
+}
+
+.about-contact a:hover {
+  opacity: 0.6;
+}
+
+.back-home {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 8px 18px;
+  color: #f5eee8;
+  text-decoration: none;
+  border: 1px solid rgba(245, 238, 232, 0.8); /* 白色线框 */
+  background: transparent;
+  font-size: clamp(12px, 1vw, 22px);
+  letter-spacing: 0.08em;
+  transition: opacity 0.3s ease;
+}
+
+/* hover（轻微变化） */
+.back-button:hover {
+  opacity: 0.5;
+}
+
+/* 点击时不变（重点） */
+.back-button:active,
+.back-button:focus {
+  outline: none;
+  background: transparent;
+  color: #f5eee8;
+  border: 1px solid rgba(245, 238, 232, 0.8);
 }
 
 .left-column {
