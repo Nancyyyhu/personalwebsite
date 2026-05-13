@@ -375,10 +375,108 @@
     }
 
     @media (max-width: 700px) {
-      .gallery-two {
-        grid-template-columns: 1fr;
-      }
-    }
+
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px 40px;
+    gap: 40px;
+  }
+
+  /* 右边内容先出现 */
+
+  .right-column {
+    order: 1;
+    width: 100%;
+    padding: 70px 0 0;
+  }
+
+  /* 左边导航放底部 */
+
+  .left-column {
+    order: 2;
+    position: relative;
+    top: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* 标题 */
+
+  .project-title {
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  /* 两部分文字竖向排列 */
+
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  .project-intro,
+  .project-concept {
+    width: 100%;
+    max-width: 95%;
+  }
+
+  /* 文字放大 */
+
+  .project-intro p,
+  .project-concept p {
+    font-size: clamp(17px, 4.8vw, 22px);
+    line-height: 1.55;
+  }
+
+  /* 图片 */
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    margin-top: 22px;
+  }
+
+  /* 左边导航字体 */
+
+  .site-name {
+    font-size: clamp(64px, 20vw, 96px);
+    white-space: normal;
+    line-height: 0.9;
+  }
+
+  .project-list a {
+    font-size: clamp(17px, 5vw, 22px);
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .website {
+    font-size: clamp(18px, 5vw, 22px);
+  }
+
+  .copyright {
+    margin-top: 24px;
+    font-size: 1rem;
+  }
+}
   </style>
 
 <script>
