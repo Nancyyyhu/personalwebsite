@@ -437,11 +437,127 @@
       }
     }
 
-    @media (max-width: 700px) {
-      .gallery-two {
-        grid-template-columns: 1fr;
-      }
-    }
+   @media (max-width: 700px) {
+
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 18px 32px;
+    gap: 40px;
+  }
+
+  header {
+    top: 20px;
+    right: 20px;
+  }
+
+  /* 让右边内容先出现 */
+  .right-column {
+    order: 1;
+    padding: 70px 0 0;
+    width: 100%;
+  }
+
+  /* 左边菜单放到最下面 */
+  .left-column {
+    order: 2;
+    position: relative;
+    height: auto;
+    top: auto;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .site-name {
+    font-size: clamp(64px, 20vw, 96px);
+    white-space: normal;
+    line-height: 0.9;
+  }
+
+  .project-list a {
+    font-size: clamp(17px, 5vw, 22px);
+    line-height: 1.15;
+    white-space: normal;
+  }
+
+  .website {
+    font-size: clamp(18px, 5vw, 22px);
+  }
+
+  /* 标题 */
+  .project-title {
+    font-size: clamp(26px, 8vw, 36px);
+    line-height: 1.05;
+    margin-bottom: 22px;
+  }
+
+  /* 两段介绍文字上下排列 */
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 36px;
+  }
+
+  .project-intro p,
+  .project-concept p {
+    font-size: clamp(16px, 4.5vw, 20px);
+    line-height: 1.35;
+  }
+
+  /* 图片和视频一张张竖着排列 */
+  .project-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .gallery-item,
+  .gallery-video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gallery-item img,
+  .gallery-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* 三张并排图在手机上变成竖排 */
+  .gallery-six {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+  }
+
+  .footnote {
+    font-size: clamp(13px, 4vw, 17px);
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+
+  .copyright {
+    margin-top: 24px;
+    font-size: 1rem;
+  }
+}
   </style>
 
 <script>
